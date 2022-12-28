@@ -1,0 +1,36 @@
+<h3>Email and password for login this page <br>
+    >> Email="nikhilkumarsinghpbic@gmail.com"<br>
+    >> Password="password123"</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Validation</title>
+</head>
+<body>
+    <h4>Login Validation</h4>
+    <form action="">
+        Email: <input type="text" id="email" placeholder="Enter your Email"><br>
+        Password: <input type="password" id="password" placeholder="Enter your Password"><br>
+        <button type="button" id="btn">Login</button>
+    </form>
+    <script>
+        var emailentered = document.getElementById('email');
+        var passentered = document.getElementById('password');
+        var button = document.getElementById('btn');
+        button.addEventListener("click",function(){
+            var email=emailentered.value;
+            var pass=passentered.value;
+
+            var correctemail="nikhilkumarsinghpbic@gmail.com"
+            var correctpass="password123"
+            if (email === correctemail && pass === correctpass){
+                window.open("whatsapp.html");
+            }
+            else{
+                alert("Wrong Email and password");
+            }
+        });
+    </script>
+</body>
+</html>
